@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baracudsgroup</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<!-- CSS only -->
+</head>
+<body style="background-color: #E8ECF1;">
+
+<div class="first_slide">
+	<div class="header_wrapper">
+		<h1 class="first_slide_header">Стартапы в технологиях майнинга</h1>
+		<h2 class="first_slide_description">Инвестируйте в ваше будущее вместе с нами!</h2>
+	</div>
+</div>
+
+{% include "header.html" %}
+
+<div class="second_slide">
+	<div class="about_wrapper">
+		<p>Для нас нет ничего лучше в жизни, чем время, проведенное с людьми, которые что-то значат для нас. Baracudsgroup - наша страсть. Это драйв нашей команды, 24/7, 365 дней в году. Стремясь быть лучшим во всем, что мы делаем, мы всегда ставим интересы наших клиентов выше собственных. Для наc хорошо - недостаточно. Мы всегда делаем больше того, что от нас ожидают. Для наших клиентов мы всегда готовы сделать невозможное. Приобретая один из предложенных стратапов вы инвестируете денежные средства в экспериментальные технологии добычи, обработки и оборота криптовалюты, которые уже со дня инвестирования начнут приносить Вам прибыль. </p>
+		<ul class="checked">
+			<li>Быстрые выплаты</li>
+			<li>Понятный интерфейс</li>
+			<li>Выгодные тарифы</li>
+		</ul>
+	</div>
+</div>
+
+<div class="container" style="height: 80vh; bottom: -70vh; position: relative; padding-top: 50px; border: 1px solid grey; margin-top: 20vh; z-index: 1000; width: 70%; border-radius: 30px;">
+	<div class="row calculator after_line">
+		<div class='col-sm-12'>Калькулятор вашего дохода</div>
+	</div>
+	<div class="row after_line" style="margin-top: 50px">
+		<input oninput="ResultInput(this.value)" type="number" class='money_input col-lg-8 col-sm-12' value="0">
+	</div>
+	<div class="row" style="margin-top: 50px">
+		<div class='col-lg-6 col-sm-12'>
+			<div class="rate_wrapper">
+				<div class="main_info">
+					<div class="rate_title">Стратап №1 (1.2%)</div>
+					<div class="rate_info">
+						<div class="row">
+							<div class="min col-xs-12 col-sm-4">Мин: 500 ₽</div>
+							<div class="max col-xs-12 col-sm-4">Макс: 10 000 ₽</div>
+							<div class="date col-xs-12 col-sm-4">Срок: 1 день</div>
+						</div>
+						<div class='row'><div class='col-xs-12'>Итог: 0</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='col-lg-6 col-sm-12'>
+			<div class="rate_wrapper">
+				<div class="main_info">
+					<div class="rate_title">Стратап №2 (20%)</div>
+					<div class="rate_info">
+						<div class="row">
+							<div class="min col-xs-12 col-sm-4">Мин: 10 000 ₽</div>
+							<div class="max col-xs-12 col-sm-4">Макс: 100 000₽</div>
+							<div class="date col-xs-12 col-sm-4">Срок: 15 день</div>
+						</div>
+						<div class='row'><div class='col-xs-12'>Итог: 0</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 60px;">
+		<div class='col-lg-6 col-sm-12', style="margin: auto;">
+			<div class="rate_wrapper">
+				<div class="main_info">
+					<div class="rate_title">Стратап №4 (50%)</div>
+					<div class="rate_info">
+						<div class="row">
+							<div class="min col-xs-12 col-sm-4">Мин: 100 000 ₽</div>
+							<div class="max col-xs-12 col-sm-4">Макс: 250 000₽</div>
+							<div class="date col-xs-12 col-sm-4">Срок: 40 дней</div>
+						</div>
+						<div class='row'><div class='col-xs-12'>Итог: 0</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid second_slide" style="background: linear-gradient(to top, #1064A2, #24D2D0); padding-top: 100px;">
+	<div class="row">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-4">
+			<table class="table">
+				<tr><th>Последние</th> <th>выводы</th></tr>
+				<tr>
+					<th>Александр В.</th>
+					<th>367821 ₽</th>
+				</tr>
+				<tr>
+					<th>Андрей Т.</th>
+					<th>29475 ₽</th>
+				</tr>
+				<tr>
+					<th>Атлас К.</th>
+					<th>27439 ₽</th>
+				</tr>
+				<tr>
+					<th>Фёдор А.</th>
+					<th>75830 ₽</th>
+				</tr>
+				<tr>
+					<th>Ильшат У.</th>
+					<th>843853 ₽</th>
+				</tr>
+				<tr>
+					<th>Владимир Д.</th>
+					<th>45392927 ₽</th>
+				</tr>
+				<tr>
+					<th>Михаил К.</th>
+					<th>27183 ₽</th>
+				</tr>
+				<tr>
+					<th>Кирилл Д.</th>
+					<th>738393 ₽</th>
+				</tr>
+				<tr>
+					<th>Анастасия А.</th>
+					<th>211002 ₽</th>
+				</tr>
+				<tr>
+					<th>Александра Ц.</th>
+					<th>42902 ₽</th>
+				</tr>
+				<tr>
+					<th>Владислав Ф.</th>
+					<th>29994 ₽</th>
+				</tr>
+				<tr>
+					<th>Филипп Р.</th>
+					<th>7727 ₽</th>
+				</tr>
+			</table>
+		</div>
+		<div class="col-lg-4">
+			<table class="table table-info">
+				<tr><th>Курс</th><th></th></tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+			</table>
+		<div class="col-lg-2"></div>
+		</div>
+	</div>
+</div>
+
+
+{% include "footer.html" %}
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+
+</body>
+</html>
